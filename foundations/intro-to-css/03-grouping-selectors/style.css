@@ -1,1 +1,20 @@
 /* Add CSS Styling */
+
+* {
+    background-color: antiquewhite;
+}
+
+.spec-a {
+    background-color: black;
+    color: white;
+}
+
+.spec-b {
+    background-color: yellow;
+}
+
+.spec-a,
+.spec-b {
+    font-size: 28px;
+    font-family: "Helvetica", "Times New Roman",sans-serif;
+}
