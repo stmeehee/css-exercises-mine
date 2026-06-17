@@ -16,13 +16,38 @@ body {
 }
 
 .modal {
+  /* border: 2px solid red; */
+  padding: 12px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
+.sides {
+    /* border: 2px solid rgb(0, 0, 0); */
+  padding: 2px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.right-side {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-side {
+     /* border: 2px solid rgb(2, 127, 230); */
+    padding: 4px; 
+    /* margin-right: 4px; */
+  /* flex-shrink: 0; */
+}
+
 .icon {
+
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
@@ -30,9 +55,25 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  /* flex-shrink: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.upper-section {
+  /* border: 2px solid red; */
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+}
+
+.buttons {
+  /* border: 2px solid red; */
+  margin-top: 6px;
 }
 
 .close-button {
