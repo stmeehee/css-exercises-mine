@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
+    background-color: #ffffff;
+
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+    /* border: 2px solid black;
+    margin: 4px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: cen;
 }
 
 img {
@@ -16,6 +25,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
@@ -24,3 +34,56 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+.header, .footer {
+    /* border: 2px solid red; */
+    /* margin: 2px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.left-links, .right-links {
+    /* border: 2px solid red; */
+  margin: 0px;
+  display: flex;
+  padding: 0;
+  gap: 16px
+}
+
+ul {
+    list-style-type: none
+}
+
+.mid-section {
+    /* border: 2px solid rgb(0, 0, 255);
+    margin: 2px; */
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+    /* border: 2px solid rgb(0, 0, 255);
+    margin: 2px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.mid-section .content .input {
+    /* border: 2px solid rgb(0, 0, 255);
+    margin: 2px; */
+}
+
+a {
+  color: dimgray;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #eeeeee;
+  /* margin-bottom: 10px */
+}
+
+
