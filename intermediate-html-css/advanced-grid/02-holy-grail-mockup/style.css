@@ -89,3 +89,95 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* background colors changed --- */
+.article {
+  background-color: #55575c;
+}
+
+.article .card {
+  background-color: darkgoldenrod;
+}
+
+.sidebar .side-content,
+.sidebar .photo {
+    background-color: #55575c;
+  
+}
+/* --- */
+
+                                      /* My solution */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+                                      /* HEADER */
+
+.header {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: minmax(max-content, 200px) minmax(max-content, 2fr);
+}
+
+.header .logo {
+  text-align: start;
+}
+
+.header .menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header ul {
+  display: contents;
+}
+
+                                      /* SIDEBAR */
+
+.sidebar {
+  grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+}
+
+.sidebar div {
+  display: grid;
+  align-items: center;
+}
+
+                                      /* NAVBAR */
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(max-content, 1fr));
+}  
+
+.nav ul {
+    display: contents;
+}
+
+                                      /* ARTICLE */                                      
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}                           
+
+.article .card {
+  height: 200px;
+}
+
+/* adding margin between article card's title and text underneath it */
+.title + p {
+  margin-top: 10px;
+}
+
+                                      /* FOOTER */                                      
+
+.footer {
+  grid-column: span 2;
+}
